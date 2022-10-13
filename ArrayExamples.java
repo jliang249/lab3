@@ -32,10 +32,14 @@ public class ArrayExamples {
       if(num < lowest) { lowest = num; }
     }
     double sum = 0;
+    int sumCount = 0;
     for(double num: arr) {
-      if(num != lowest) { sum += num; }
+      if(num != lowest) { 
+        sum += num;
+        sumCount++;
+       }
     }
-    return sum / (arr.length - 1);
+    return sum/sumCount;
   }
 
 
